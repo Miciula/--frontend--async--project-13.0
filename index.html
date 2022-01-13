@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>To-Do List CodeRoad</title>
+</head>
+
+<body>
+
+    <div class="todo-1"></div>
+    <div class="todo-2"></div>
+    <div class="todo-3"></div>
+
+    <script src="./Button.js"></script>
+    <script src="./Input.js"></script>
+    <script src="./Form.js"></script>
+    <script src="./Task.js"></script>
+    <script src="./ToDo.js"></script>
+
+    <script>
+        const todo1 = new ToDo('todo-1')
+        const todo2 = new ToDo('todo-2')
+        const todo3 = new ToDo('todo-3')
+
+        document.querySelector('.todo-1').appendChild(todo1.render())
+        document.querySelector('.todo-2').appendChild(todo2.render())
+        document.querySelector('.todo-3').appendChild(todo3.render())
+    </script>
+
+</body>
+
+</html>
